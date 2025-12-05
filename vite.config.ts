@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', 'VITE_');
   return {
-    // 💡 السطر الجديد المضاف لتصحيح مشكلة المسار على GitHub Pages
-    base: '/UrgentFX/', 
+    // 🔑 التعديل النهائي: استخدام المسار النسبي './' لحل مشاكل النشر على GitHub Pages
+    base: './', 
     server: {
       port: 3000,
       host: '0.0.0.0',
